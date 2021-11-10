@@ -30,7 +30,7 @@ public class SlashCommands extends ListenerAdapter {
         /*
          * guild slash commands (changes instant)
          */
-        Guild guild = event.getJDA().getGuildById("908130260904738856");
+        Guild guild = event.getJDA().getGuildById("guildID");
         CommandListUpdateAction commands = guild.updateCommands();
 
         /*
@@ -136,6 +136,10 @@ public class SlashCommands extends ListenerAdapter {
         }
     }
 
+    /*
+     * selection menu (NEW)
+     * added in 4.3.0_346
+     */
     public void menuExample(SlashCommandEvent event) {
         SelectionMenu menu = SelectionMenu.create("menu:class")
                 .setPlaceholder("Choose your class") // shows the placeholder indicating what this menu is for

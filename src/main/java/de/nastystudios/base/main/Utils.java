@@ -20,7 +20,7 @@ public class Utils {
      */
     public static boolean isAdmin(Member member) {
         boolean state = false;
-        if(member.getRoles().stream().anyMatch(role -> role.getId().equals("908130913521651753"))) {
+        if(member.getRoles().stream().anyMatch(role -> role.getId().equals("roleid"))) {
             state = true;
         }
         return state;
